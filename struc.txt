@@ -1,0 +1,16 @@
+OmniMamba-CFD/
+├── data/                    # 存放 .npy 数据
+├── checkpoints/             # 存放训练好的模型权重 (.pth)
+├── models/
+│   ├── __init__.py
+│   ├── omni_mamba_block.py  # 核心 Block (保持不变)
+│   └── network.py           # 网络架构 (保持不变)
+├── utils/
+│   ├── __init__.py
+│   ├── physics_loss.py      # 损失函数 (保持不变)
+│   └── boundary.py          # 边界处理 (保持不变)
+├── config.py                # [新增] 统一配置文件
+├── preprocess.py            # 数据生成 (保持不变)
+├── train.py                 # [重构] 独立训练脚本
+├── predict.py               # [新增] 独立预测脚本
+└── requirements.txt         # 依赖列表

@@ -1,0 +1,8 @@
+torch>=2.2.0
+numpy
+h5py
+scipy
+matplotlib
+# 核心依赖：Mamba-2
+# 安装前请确保 nvcc 可用：nvcc --version
+mamba-ssm[causal-conv1d]>=2.0.0
